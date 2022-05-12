@@ -84,13 +84,6 @@
                                     <constraint firstAttribute="width" constant="30" id="8oA-wM-rjI"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pika" translatesAutoresizingMaskIntoConstraints="NO" id="aH3-Dp-TXH">
-                                <rect key="frame" x="87" y="354" width="240" height="188"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="188" id="ahK-pG-Lmc"/>
-                                    <constraint firstAttribute="width" constant="240" id="egx-eL-hWh"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pikachu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Js-2T-zib">
                                 <rect key="frame" x="89.5" y="179" width="235.5" height="70.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="59"/>
@@ -103,6 +96,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pika" translatesAutoresizingMaskIntoConstraints="NO" id="aH3-Dp-TXH">
+                                <rect key="frame" x="70" y="321" width="240" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="ahK-pG-Lmc"/>
+                                    <constraint firstAttribute="width" constant="240" id="egx-eL-hWh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NTH-Hy-nIA"/>
                         <color key="backgroundColor" red="0.83877840909090906" green="0.015703367723994815" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,6 +125,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="qf0-pA-RBt"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="ddd" destination="aH3-Dp-TXH" id="tHH-bW-oSG"/>
                         <outlet property="imagePokemon" destination="aH3-Dp-TXH" id="g7q-ea-c2i"/>
                         <outlet property="lblNamePokemon" destination="6Js-2T-zib" id="f4w-s3-ZUY"/>
                         <outlet property="lblType" destination="qjL-Ti-29X" id="ifQ-ep-Uxc"/>
